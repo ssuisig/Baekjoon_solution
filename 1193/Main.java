@@ -13,23 +13,16 @@ public class Main {
         while (n > line) {
             n -= line;
             line++;
-            // System.out.println(n + "," + line);
         }
 
-        int r1 = 1;
-        int r2 = line;
-        for (int i = 0; i < n - 1; i++) {
-            r1++;
-            r2--;
-        }
-        // System.out.println(r1 + "," + r2);
+        int r1 = 1 + (n - 1);
+        int r2 = line - (n - 1);
 
         if (line % 2 == 0) {
             System.out.println(r1 + "/" + r2);
         } else {
             System.out.println(r2 + "/" + r1);
         }
-        br.readLine();
 
     }
 }
